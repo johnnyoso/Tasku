@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/assign_friend_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"/>
+
+    <ProgressBar
+        android:id="@+id/assign_friend_list_avatar_progress_bar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/assign_friend_list_profile_pic"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/assigned_user_icon"
+        android:contentDescription="@string/friend_profile_pic"/>
+
+    <TextView
+        android:id="@+id/assign_friend_list_profile_name"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/friend_at_email"
+        android:textSize="20sp"/>
+
+    <!--I need this textview so I can retrieve the friend userId for friend approval / rejection-->
+    <TextView
+        android:id="@+id/assign_friend_list_profile_id"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:textSize="20sp"/>
+
+</LinearLayout>

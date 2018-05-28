@@ -1,0 +1,266 @@
+<resources>
+    <string name="app_name">Tasku</string>
+
+    <!--Firebase Database Strings-->
+    <string name="tasks">tasks</string>
+    <string name="taskName">taskName</string>
+    <string name="taskDescription">taskDescription</string>
+    <string name="taskAssignee">taskAssignee</string>
+    <string name="taskCreator">taskCreator</string>
+    <string name="taskDueDateAndTime">taskDueDateAndTime</string>
+    <string name="taskStatus">taskStatus</string>
+    <string name="taskKey">taskKey</string>
+    <string name="users">users</string>
+    <string name="user_name">username</string>
+    <string name="authentication_failed">Authentication failed. </string>
+    <string name="tasks_completed">tasksCompleted</string>
+
+    <!--Firebase Messaging Strings-->
+    <string name="message_token_format" translatable="false">InstanceID Token: %s</string>
+
+    <!--Firebase Storage Strings-->
+    <string name="images">images/</string>
+    <string name="png">.png</string>
+    <string name="userpiclocation">users/</string>
+    <string name="friendpiclocation">/friends/</string>
+    <string name="friendrequestpiclocation">/friendRequests/</string>
+    <string name="friendrequestsentpiclocation">friendRequestsSent</string>
+
+    <!--App Toolbar Strings-->
+    <string name="my_task_toolbar_title">My Task List</string>
+    <string name="new_task_toolbar_title">Create a new task</string>
+    <string name="task_description_toolbar_title">Task Description</string>
+    <string name="friend_list_toolbar_title">Friend List</string>
+    <string name="edit_user_profile_toolbar_title">Edit your profile</string>
+    <string name="edit_task_toolbar_title">Edit the task</string>
+    <string name="settings_toolbar_title">Settings</string>
+    <string name="sign_in_toolbar_title">Tasku sign in</string>
+
+    <!--SignIn Activity Strings-->
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="dialog_username">username</string>
+    <string name="dialog_user_first_name">firstname</string>
+    <string name="dialog_user_last_name">lastname</string>
+    <string name="dialog_password_1">password1</string>
+    <string name="dialog_password_2">password2</string>
+    <string name="new_user_dialog_alert_shown">new_user_alert_shown</string>
+    <string name="forgot_password_dialog_alert_shown">forgot_password_alert_shown</string>
+    <string name="new_task_notifications">newTaskNotifications</string>
+    <string name="new_friend_request_notifications">newFriendRequestNotifications</string>
+    <string name="please_enter_your_password">Please enter your password</string>
+    <string name="please_enter_a_valid_email_address">Please enter a valid email address</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="enter_details_below">Enter details below</string>
+    <string name="register_user">Register</string>
+    <string name="register_user_cancel">Cancel</string>
+    <string name="user_id">userID</string>
+    <string name="unexpected_error">Unexpected error please try again</string>
+    <string name="password_doesnt_match">Password doesn\'t match</string>
+    <string name="password_length">Password must be between 8 to 20 characters long</string>
+    <string name="please_enter_a_password">Please enter a password</string>
+    <string name="please_fill_in_all_the_entries"></string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="enter_email_below">Enter email below</string>
+    <string name="reset_password">Reset password</string>
+    <string name="email_sent">Email sent</string>
+    <string name="this_email_is_not_yet_registered">This email is not yet registered</string>
+    <string name="verification_email_sent">Verification Email sent</string>
+
+    <!--Settings Activity-->
+    <string name="search_friend_dialog_alert_shown">search_friend_dialog_alert_shown</string>
+    <string name="search_email">search_email</string>
+
+    <!--Friends Activity-->
+    <string name="dialog_friend_title">Search Friend\'s Email</string>
+    <string name="dialog_friend_message">Enter email below</string>
+    <string name="dialog_friend_pos_button">Search</string>
+    <string name="dialog_friend_neg_button">Cancel</string>
+    <string name="friend_requests">friendRequests</string>
+    <string name="friend_requests_sent">friendRequestsSent</string>
+    <string name="toast_message_already_friend">This person is already a friend!</string>
+    <string name="toast_message_already_received_request">This person already sent you a request!</string>
+    <string name="toast_message_already_sent_request">You already sent a friend request to this person!</string>
+
+    <!--NewTask Activity-->
+    <string name="friend_alert_dialog_shown">friendAlertDialogShown</string>
+    <string name="checkbox_state_instance">checkboxStateInstance</string>
+    <string name="friend_avatar_list">friendAvatarList</string>
+    <string name="friends">friends</string>
+    <string name="task_due_date_and_time">taskDueDateAndTime</string>
+    <string name="task_description">taskDescription</string>
+    <string name="task_reminder">taskReminder</string>
+    <string name="year">year</string>
+    <string name="month">month</string>
+    <string name="day">day</string>
+    <string name="hour">hour</string>
+    <string name="minute">minute</string>
+    <string name="am_pm">am_pm</string>
+    <string name="AM">AM</string>
+    <string name="PM">PM</string>
+    <string name="Australia">Australia</string>
+    <string name="please_select">Please select</string>
+
+    <!--My Task Activity-->
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="is_two_pane">isTwoPane</string>
+    <string name="task_list">My Tasks</string>
+    <string name="sign_out_message">Sign Out?</string>
+    <string name="ok">OK</string>
+    <string name="sign_out_dialog_shown">signOutDialogShown</string>
+    <string name="adapter_position">adapterPosition</string>
+    <string name="scroll_progress">scrollProgress</string>
+    <string name="visible_task_list">visibleTaskList</string>
+    <string name="m_open_task_recyclerview">mOpenTaskRecyclerView</string>
+    <string name="m_close_task_recyclerview">mCloseTaskRecyclerView</string>
+
+    <!--TaskAdapter Strings-->
+    <string name="task_key">taskKey</string>
+    <string name="task_name">taskName</string>
+
+    <!--TaskDescription Activity-->
+    <string name="task_messages">taskMessages</string>
+    <string name="task_assignee">taskAssignee</string>
+    <string name="task_deleted">Task successfully deleted</string>
+
+    <!--Edit User Activity Strings-->
+    <string name="bitmap_byte_array">bitmap_byte_array</string>
+    <string name="logged_in_user_key">logged_in_user_key</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_library">Choose from Library</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_photo">Add Photo!</string>
+    <string name="select_file">Select File</string>
+    <string name="please_edit_your_profile_pic">Please edit your profile pic</string>
+    <string name="image_upload_not_successful">Image upload not successful</string>
+    <string name="password1">password1</string>
+    <string name="password2">password2</string>
+    <string name="emailAddress">emailAddress</string>
+    <string name="firstName">firstName</string>
+    <string name="surName">surName</string>
+    <string name="mobile">mobile</string>
+    <string name="change_user_email_alert_shown">change_user_email_alert_shown</string>
+    <string name="change_user_password_alert_shown">change_user_password_alert_shown</string>
+    <string name="dialog_email">dialog_email</string>
+    <string name="old_password">old_password</string>
+    <string name="new_password_1">new_password_1</string>
+    <string name="new_password_2">new_password_2</string>
+
+    <!--Permmission Utils-->
+    <string name="permission_necessary">Permission necessary</string>
+    <string name="external_storage_permission_is_necessary">External storage permission is necessary</string>
+
+    <!--Tasku Firebase Messaging Service-->
+    <string name="notification_type">notificationType</string>
+    <string name="new_task">newTask</string>
+    <string name="new_task_activity">newTaskActivity</string>
+    <string name="new_friend_request">newFriendRequest</string>
+    <string name="current_uid">currentUid</string>
+    <string name="new_friend_request_activity">newFriendRequestActivity</string>
+
+    <!--TaskList widget-->
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="widget_has_been_updated">Widget has been updated</string>
+
+    <!--activity edit user xml strings-->
+    <string name="profile_icon">profile icon</string>
+    <string name="first_name">First Name: </string>
+    <string name="surname">Surname: </string>
+    <string name="mobile_entry">Mobile: </string>
+    <string name="email_entry">Email: </string>
+    <string name="password_entry">Password: </string>
+    <string name="user_email">User email</string>
+    <string name="select_photo">select photo</string>
+    <string name="none_set">None Set</string>
+    <string name="enter_first_name">* Enter first name</string>
+    <string name="enter_surname">* Enter surname</string>
+    <string name="enter_mobile">* Enter mobile</string>
+    <string name="change_password">Change password</string>
+    <string name="block_password">********</string>
+    <string name="change_email">Change email</string>
+    <string name="items_are_required">items with * are required</string>
+    <string name="edit_user_details">Edit user details</string>
+    <string name="update">Update</string>
+
+    <!--activity friends page xml-->
+    <string name="requests">Requests</string>
+    <string name="sent_invites">Sent invites</string>
+    <string name="add_new_friend">Add new friend</string>
+
+    <!--activity new task xml-->
+    <string name="enter_task_name">Enter Task Name</string>
+    <string name="enter_task_description">Enter Task Description</string>
+    <string name="set_reminder_every">Set reminder every: </string>
+    <string name="assign_to">Assign To: </string>
+    <string name="create_task">Create Task</string>
+
+    <!--activity settings page-->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="delete_account">Delete Account</string>
+
+    <!--activity sign in xml-->
+    <string name="app_logo">App logo</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="new_user">New User?</string>
+    <string name="forgot_password_">Forgot password?</string>
+
+    <!--activity task xml-->
+    <string name="open_tasks">Open Tasks</string>
+    <string name="closed_tasks">Closed Tasks</string>
+    <string name="create_new_task">Create a new task</string>
+
+    <!--activity task description-->
+    <string name="task_name_">Task Name</string>
+    <string name="created_by">Created by: </string>
+    <string name="task_creator">task creator</string>
+    <string name="assignees">Assignee/s</string>
+    <string name="task_description_">Task Description</string>
+    <string name="task_description_entry">Task Description:</string>
+    <string name="enter_message">Enter message...</string>
+    <string name="send_message">send message</string>
+
+    <!--app toolbar shared xml-->
+    <string name="toolbar_title">Toolbar title</string>
+
+    <!--custom dialog view xml  -->
+    <string name="friend_profile_pic">friend profile pic</string>
+    <string name="friend_at_email">Friend@email.com</string>
+    <string name="enter_new_email">Enter new email</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="enter_old_password">Enter your old password</string>
+    <string name="enter_new_password">Enter your new password</string>
+    <string name="add">add</string>
+    <string name="reject">Reject</string>
+    <string name="approve">Approve</string>
+
+    <!--task activity menu-->
+    <string name="new_task_">New Task</string>
+    <string name="settings">Settings</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="close_task">Close Task</string>
+    <string name="reopen_task">Reopen Task</string>
+    <string name="delete_task">Delete Task</string>
+
+    <!--Toast messages-->
+    <string name="reminder_is">Reminder is: </string>
+    <string name="friend_removed">Friend removed</string>
+    <string name="network_issues">Network connectivity issues please try again later</string>
+    <string name="error">Error:</string>
+    <string name="friend_request_cancelled">Friend Request Cancelled</string>
+    <string name="fill_required_entries">Please fill in required entries</string>
+    <string name="email_changed">Email Changed</string>
+    <string name="password_changed">Password Changed</string>
+    <string name="new_task_created">New Task Created</string>
+    <string name="put_in_task_name">Please put in task name</string>
+    <string name="password_not_match">Password doesn\'t match</string>
+    <string name="change_success">Change Success</string>
+    <string name="account_deleted">User account deleted</string>
+    <string name="account_not_deleted">User account not deleted: </string>
+
+
+</resources>

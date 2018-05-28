@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/new_task_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <include layout="@layout/app_toolbar_shared"/>
+
+    </LinearLayout>
+
+    <EditText
+       android:id="@+id/task_name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="@string/enter_task_name"
+        android:layout_marginTop="8dp"
+       android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/new_task_toolbar"/>
+
+    <TextView
+        android:id="@+id/task_description_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/taskDescription"
+        android:textSize="20sp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/task_name"/>
+
+    <EditText
+        android:id="@+id/task_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_task_description"
+        android:gravity="top"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/task_description_TV" />
+
+    <LinearLayout
+        android:id="@+id/spinner_reminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/assignee_avatar_RV">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_reminder_every"
+            android:textSize="20sp"
+            android:padding="8dp"/>
+
+        <Spinner
+            android:id="@+id/reminder_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:prompt="@string/please_select">
+
+        </Spinner>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/assignee_avatar_RV"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toTopOf="@+id/create_button">
+
+    <TextView
+        android:id="@+id/assign_to_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/assign_to"
+        android:padding="8dp"
+        android:textSize="20sp"/>
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/user_avatar_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="@string/create_task"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/primary_text_dark"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

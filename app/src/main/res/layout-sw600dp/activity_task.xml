@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_task_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/app_toolbar_shared">
+        </include>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/task_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/activity_task_toolbar">
+
+        <FrameLayout
+            android:id="@+id/open_task_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/open_tasks"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/open_tasks"
+                android:textSize="20dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/closed_task_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/closed_tasks"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/closed_tasks"
+                android:textSize="20dp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/task_recyclerview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/task_selector">
+
+        <TextView
+            android:id="@+id/task_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_list"
+            android:textSize="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/open_recyclerview_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/close_recyclerview_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/new_task_fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="bottom|end"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="@string/create_new_task"/>
+
+</android.support.constraint.ConstraintLayout>

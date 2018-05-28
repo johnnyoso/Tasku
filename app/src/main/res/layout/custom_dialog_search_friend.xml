@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:elevation="24dp">
+
+    <EditText
+        android:id="@+id/search_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/enter_email"/>
+
+    <LinearLayout
+        android:id="@+id/search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/friend_pic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/assigned_user_icon"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/friend_profile_pic"/>
+
+        <ProgressBar
+            android:id="@+id/search_friend_progress_bar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/friend_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/email_entry"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_friends_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/add"
+        android:visibility="gone"
+        android:onClick="addFriend"
+        android:background="@color/colorPrimaryLight"/>
+
+</LinearLayout>

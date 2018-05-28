@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/task_description_600dp_land_menu_edit_task"
+        android:title="@string/edit_task"/>
+
+    <item
+        android:id="@+id/task_description_600dp_land_menu_close_task"
+        android:title="@string/close_task"/>
+
+    <item
+        android:id="@+id/task_description_600dp_land_menu_reopen_task"
+        android:title="@string/reopen_task"/>
+
+    <item
+        android:id="@+id/task_description_600dp_land_menu_delete_task"
+        android:title="@string/delete_task"/>
+
+    <item
+        android:id="@+id/task_activity_600dp_land_menu_create_new_task"
+        android:title="@string/new_task_"/>
+
+    <item
+        android:id="@+id/task_activity_600dp_land_menu_settings_page"
+        android:title="@string/settings"/>
+
+    <item
+        android:id="@+id/task_activity_600dp_land_menu_sign_out_user"
+        android:title="@string/sign_out" />
+
+</menu>

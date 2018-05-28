@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal">
+
+    <ProgressBar
+        android:id="@+id/friend_request_list_avatar_progress_bar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/friend_profile_pic"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/assigned_user_icon"
+        android:contentDescription="@string/friend_profile_pic"/>
+
+    <TextView
+        android:id="@+id/friend_profile_name"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/friend_at_email"
+        android:textSize="20sp"/>
+
+    <!--I need this textview so I can retrieve the friend userId for friend approval / rejection-->
+    <TextView
+        android:id="@+id/friend_profile_id"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/reject_friend_request"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/ic_clear_black_48dp"
+        android:contentDescription="@string/reject"/>
+
+
+    <ImageView
+        android:id="@+id/approve_friend_request"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/ic_done_black_48dp"
+        android:contentDescription="@string/approve"/>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:id="@+id/friend_avatar_item_progress_bar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginStart="4dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/friend_avatar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/assigned_user_icon"
+        android:contentDescription="@string/friend_profile_pic"/>
+
+</LinearLayout>
